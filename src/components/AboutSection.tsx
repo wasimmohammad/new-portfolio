@@ -47,11 +47,7 @@ const AboutSection: React.FC = () => {
                   </li>
                   <li className="text-gray-700 dark:text-gray-300">
                     <span className="font-medium">Web Developer</span><br/>
-                    <span className="text-sm">Webysys International LLC, Dec - 2021 to Apr - 2022</span>
-                  </li>
-                  <li className="text-gray-700 dark:text-gray-300">
-                    <span className="font-medium">Wordpress Developer</span><br/>
-                    <span className="text-sm">Webysys International LLC, Jan - 2021 to Nov - 2021</span>
+                    <span className="text-sm">Webysys International LLC, May - 2021 to Apr - 2022</span>
                   </li>
                 </ul>
               </div>
