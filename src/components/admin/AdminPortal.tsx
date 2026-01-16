@@ -6,7 +6,8 @@ const AdminPortal: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleLogin = (credentials: { username: string; password: string }) => {
-    // In production, validate with backend
+    // In production, this should validate with backend API
+    // For demo: credentials are validated in AdminLogin component
     setIsAuthenticated(true);
   };
 

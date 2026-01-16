@@ -18,7 +18,8 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ onLogin }) => {
       return;
     }
 
-    // For demo purposes - in production, this would be validated against a backend
+    // For demo purposes - in production, this would be validated against a backend API
+    // The actual credentials validation should be done server-side
     if (username === 'admin' && password === 'smile2026') {
       onLogin({ username, password });
       setError('');
@@ -96,9 +97,7 @@ const AdminLogin: React.FC<AdminLoginProps> = ({ onLogin }) => {
 
           <div className="mt-6 p-4 bg-blue-50 dark:bg-gray-800 rounded-lg">
             <p className="text-xs text-gray-600 dark:text-gray-400">
-              <strong>Demo Credentials:</strong><br />
-              Username: admin<br />
-              Password: smile2026
+              <strong>Note:</strong> This is a demo admin portal. In production, proper authentication would be implemented with secure backend validation.
             </p>
           </div>
         </div>

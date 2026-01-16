@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               </a>
             ))}
             <a
-              href={adminLink.href}
+              href="#admin-portal"
               className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
             >
               {adminLink.name}
@@ -113,7 +113,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             </a>
           ))}
           <a
-            href={adminLink.href}
+            href="#admin-portal"
             className="text-xl font-medium px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
             onClick={closeMenu}
           >

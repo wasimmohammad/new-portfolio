@@ -12,6 +12,7 @@ import PhotoGallery from './components/PhotoGallery';
 import ContactSection from './components/ContactSection';
 import NotificationSubscription from './components/NotificationSubscription';
 import AnnouncementScroll from './components/AnnouncementScroll';
+import AdminPortal from './components/admin/AdminPortal';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from './context/ThemeContext';
@@ -49,6 +50,9 @@ function App() {
           <PhotoGallery />
           <NotificationSubscription />
           <ContactSection />
+          <section id="admin-portal" className="py-20 bg-gray-50 dark:bg-gray-800">
+            <AdminPortal />
+          </section>
         </main>
         <Footer />
         <ScrollToTop />
