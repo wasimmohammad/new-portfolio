@@ -21,6 +21,8 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const adminLink = { name: 'Admin', href: '/admin' };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -57,6 +59,12 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 {link.name}
               </a>
             ))}
+            <a
+              href={adminLink.href}
+              className="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+            >
+              {adminLink.name}
+            </a>
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -104,6 +112,13 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               {link.name}
             </a>
           ))}
+          <a
+            href={adminLink.href}
+            className="text-xl font-medium px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+            onClick={closeMenu}
+          >
+            {adminLink.name}
+          </a>
         </div>
       </div>
     </header>
