@@ -6,37 +6,38 @@ const UsefulLinks: React.FC = () => {
     {
       title: 'Government Departments',
       links: [
-        { name: 'Department of Animal Husbandry, AP', url: '#' },
-        { name: 'Ministry of Fisheries, Animal Husbandry & Dairying', url: '#' },
-        { name: 'National Dairy Development Board', url: '#' },
-        { name: 'Indian Council of Agricultural Research', url: '#' }
+        { name: 'Department of Animal Husbandry, AP', url: 'https://ahdap.gov.in/' },
+        { name: 'Ministry of Fisheries, Animal Husbandry & Dairying', url: 'https://dahd.nic.in/' },
+        { name: 'National Dairy Development Board', url: 'https://www.nddb.coop/' },
+        { name: 'Indian Council of Agricultural Research', url: 'https://icar.org.in/' }
       ]
     },
     {
       title: 'Veterinary Institutions',
       links: [
-        { name: 'NTR College of Veterinary Science', url: '#' },
-        { name: 'College of Veterinary Science, Tirupati', url: '#' },
-        { name: 'Indian Veterinary Research Institute', url: '#' },
-        { name: 'National Institute of Animal Nutrition', url: '#' }
+        { name: 'NTR College of Veterinary Science', url: 'https://cvsc.svvu.edu.in/' },
+        { name: 'College of Veterinary Science, Tirupati', url: 'https://svvu.edu.in/' },
+        { name: 'Indian Veterinary Research Institute', url: 'https://www.ivri.nic.in/' },
+        { name: 'National Institute of Animal Nutrition', url: 'https://www.nianp.res.in/' }
       ]
     },
     {
       title: 'Cooperatives & Federations',
       links: [
-        { name: 'AP Dairy Development Cooperative Federation', url: '#' },
-        { name: 'National Cooperative Dairy Federation', url: '#' },
-        { name: 'Vijaya Dairy', url: '#' },
-        { name: 'Heritage Foods', url: '#' }
+        { name: 'AP Dairy Development Cooperative Federation', url: 'https://www.vijayamilk.com/' },
+        { name: 'National Cooperative Dairy Federation', url: 'https://www.ncdc.in/' },
+        { name: 'Vijaya Dairy', url: 'https://www.vijayamilk.com/' },
+        { name: 'Heritage Foods', url: 'https://www.heritagefoods.in/' }
       ]
     },
     {
       title: 'Resources & Information',
       links: [
-        { name: 'Livestock Census Data', url: '#' },
-        { name: 'Vaccination Schedules', url: '#' },
-        { name: 'Government Schemes & Subsidies', url: '#' },
-        { name: 'Weather & Advisory Services', url: '#' }
+        // Note: These are placeholder URLs - update with actual resource links
+        { name: 'Livestock Census Data', url: 'https://dahd.nic.in/about-us/divisions/statistics' },
+        { name: 'Vaccination Schedules', url: 'https://dahd.nic.in/' },
+        { name: 'Government Schemes & Subsidies', url: 'https://dahd.nic.in/schemes/programmes' },
+        { name: 'Weather & Advisory Services', url: 'https://mausam.imd.gov.in/' }
       ]
     }
   ];

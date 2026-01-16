@@ -18,7 +18,7 @@ const NotificationSubscription: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Here you would typically send data to your backend
-    console.log({ email, phone, subscriptionType });
+    // For demo: just show success message
     setIsSubmitted(true);
     
     // Reset form after 3 seconds

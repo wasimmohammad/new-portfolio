@@ -126,7 +126,10 @@ const PhotoGallery: React.FC = () => {
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                  <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 bg-white text-gray-900 rounded-lg font-medium">
+                  <button 
+                    className="opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity duration-300 px-4 py-2 bg-white text-gray-900 rounded-lg font-medium"
+                    aria-label={`View full size image of ${photo.title}`}
+                  >
                     View Full Size
                   </button>
                 </div>

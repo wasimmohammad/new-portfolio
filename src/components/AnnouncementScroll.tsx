@@ -39,16 +39,17 @@ const AnnouncementScroll: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed top-16 left-0 right-0 z-40 bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md">
+    <div className="fixed top-16 left-0 right-0 z-40 bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md" role="banner" aria-live="polite" aria-label="Announcements">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-3">
           <div className="flex items-center flex-1 overflow-hidden">
-            <span className="bg-white text-blue-600 px-3 py-1 rounded-full text-xs font-bold mr-4 flex-shrink-0">
+            <span className="bg-white text-blue-600 px-3 py-1 rounded-full text-xs font-bold mr-4 flex-shrink-0" aria-label="Latest news">
               LATEST
             </span>
             <a 
               href={announcements[currentIndex].link}
               className="hover:underline animate-fadeIn"
+              aria-label={`Current announcement: ${announcements[currentIndex].text}`}
             >
               {announcements[currentIndex].text}
             </a>
@@ -56,7 +57,7 @@ const AnnouncementScroll: React.FC = () => {
           <button 
             onClick={() => setIsVisible(false)}
             className="ml-4 p-1 hover:bg-white/20 rounded-full transition-colors"
-            aria-label="Close announcement"
+            aria-label="Close announcements banner"
           >
             <X size={20} />
           </button>
