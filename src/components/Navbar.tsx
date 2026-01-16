@@ -12,9 +12,12 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'About SMILE', href: '#about' },
+    { name: 'Organization', href: '#organization' },
+    { name: 'Training', href: '#training' },
+    { name: 'Success Stories', href: '#success-stories' },
+    { name: 'Resources', href: '#knowledge-centre' },
+    { name: 'Gallery', href: '#photo-gallery' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -37,8 +40,10 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className='flex items-center justify-center gap-2'>
-            <img src='https://res.cloudinary.com/wasimmohammad/image/upload/v1689073190/portfolio/logo_z8wytu.png' className='w-[72px]'/>
-            
+            <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+              S
+            </div>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">SMILE</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -47,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
+                className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 font-medium transition-colors"
               >
                 {link.name}
               </a>
@@ -93,7 +98,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             <a
               key={link.name}
               href={link.href}
-              className="text-xl font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-xl font-medium text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
               onClick={closeMenu}
             >
               {link.name}
